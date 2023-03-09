@@ -9,17 +9,23 @@ package comcursoemvideo.sistema.de.banco;
  * @author jrpbnt
  */
 public class caixa {
-    public static void main(String[] args) {
-         ContaBanco p1 = new ContaBanco();
-         p1.setNumConta(1111);
-         p1.setDono("Jubileu");
-         p1.AbrirConta("CC");
-         p1.EstadoAtual();
-         
-    }
-   
-  
-   
-    
-}
 
+    public static void main(String[] args) {
+
+        ContaBanco p1 = new ContaBanco();
+        p1.setNumConta(2124);
+        p1.setDono("José Roberto");
+        p1.AbrirConta("CC");
+        p1.Depositar(200);
+        p1.Sacar(250);
+        p1.FecharConta();
+        p1.EstadoAtual();
+        
+        
+        
+        
+        
+
+    }
+
+}

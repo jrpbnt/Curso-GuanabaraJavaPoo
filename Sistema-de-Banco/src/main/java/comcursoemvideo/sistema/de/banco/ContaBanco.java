@@ -43,15 +43,29 @@ public class ContaBanco {
     }
 
     public void FecharConta() {
-        if (this.getSaldo() > 0) {
-            System.out.println("Conta n pode ser fechada pois ainda ha dinheiro nela");
-        } else if (this.getSaldo() < 0) {
-            System.out.println("Conta n pode ser fechada pois está em debito");
-        } else {
-            this.setStatus(false);
-            System.out.println("Conta Fechada Com sucesso");
+        
+    //    if (this.getSaldo() > 0) {
+    //        System.out.println("Conta n pode ser fechada pois ainda ha dinheiro nela");
+    //    } else if (this.getSaldo() < 0) {
+     //       System.out.println("Conta n pode ser fechada pois está em debito");
+     //   } else {
+     //       this.setStatus(false);
+      //      System.out.println("Conta Fechada Com sucesso");
 
-        }
+     //   }
+     
+          if(this.getSaldo() > 0){
+              System.out.println("Conta n pode ser fechada pois ainda ha dinheiro nela");
+          }
+          
+          if(this.getSaldo() < 0){
+              System.out.println("Conta n pode ser fechada pois está em debito");
+          }
+          
+          if(this.getSaldo() == 0){
+              this.setStatus(false);
+              System.out.println("Conta Fechada Com sucesso");
+          }
 
     }
 
