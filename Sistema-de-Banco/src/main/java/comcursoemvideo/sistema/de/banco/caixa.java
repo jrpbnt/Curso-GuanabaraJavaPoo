@@ -13,13 +13,20 @@ public class caixa {
     public static void main(String[] args) {
 
         ContaBanco p1 = new ContaBanco();
-        p1.setNumConta(2124);
-        p1.setDono("José Roberto");
-        p1.AbrirConta("CC");
-        p1.Depositar(200);
-        p1.Sacar(250);
-        p1.FecharConta();
-        p1.EstadoAtual();
+      p1.setNumConta(2124);
+       p1.setDono("José Roberto");
+       p1.AbrirConta("CC");
+      p1.Depositar(200);        p1.Sacar(250);
+       p1.FecharConta();
+       p1.EstadoAtual();
+        
+        ContaBanco p2 = new ContaBanco();
+        p2.setNumConta(235092);
+        p2.setDono("Elon musk");
+        p2.AbrirConta("CC");
+        p2.Depositar(200000000);
+        p2.EstadoAtual();
+        
         
         
         
